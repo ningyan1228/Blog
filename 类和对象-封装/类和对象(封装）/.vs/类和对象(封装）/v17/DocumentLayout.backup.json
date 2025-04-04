@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\GitHub\\GitHub\\\u7C7B\u548C\u5BF9\u8C61-\u5C01\u88C5\\\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7985CD41-A27D-4313-9EE3-1BB761D13EDB}|\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09.vcxproj|F:\\GitHub\\GitHub\\\u7C7B\u548C\u5BF9\u8C61-\u5C01\u88C5\\\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\C\u002B\u002B\u5BF9\u8C61\u6A21\u578B\u548Cthis\u6307\u9488.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7985CD41-A27D-4313-9EE3-1BB761D13EDB}|\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09.vcxproj|solutionrelative:\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\C\u002B\u002B\u5BF9\u8C61\u6A21\u578B\u548Cthis\u6307\u9488.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "C\u002B\u002B\u5BF9\u8C61\u6A21\u578B\u548Cthis\u6307\u9488.cpp",
+              "DocumentMoniker": "F:\\GitHub\\GitHub\\\u7C7B\u548C\u5BF9\u8C61-\u5C01\u88C5\\\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\C\u002B\u002B\u5BF9\u8C61\u6A21\u578B\u548Cthis\u6307\u9488.cpp",
+              "RelativeDocumentMoniker": "\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\C\u002B\u002B\u5BF9\u8C61\u6A21\u578B\u548Cthis\u6307\u9488.cpp",
+              "ToolTip": "F:\\GitHub\\GitHub\\\u7C7B\u548C\u5BF9\u8C61-\u5C01\u88C5\\\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\C\u002B\u002B\u5BF9\u8C61\u6A21\u578B\u548Cthis\u6307\u9488.cpp",
+              "RelativeToolTip": "\u7C7B\u548C\u5BF9\u8C61(\u5C01\u88C5\uFF09\\C\u002B\u002B\u5BF9\u8C61\u6A21\u578B\u548Cthis\u6307\u9488.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-04T13:35:53.541Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
