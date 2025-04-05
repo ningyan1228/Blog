@@ -18,5 +18,11 @@
     <ClCompile Include="C++对象模型和this指针.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="this指针.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="空指针访问成员函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

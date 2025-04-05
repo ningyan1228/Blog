@@ -128,6 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="C++对象模型和this指针.cpp" />
+    <ClCompile Include="this指针.cpp" />
+    <ClCompile Include="空指针访问成员函数.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
