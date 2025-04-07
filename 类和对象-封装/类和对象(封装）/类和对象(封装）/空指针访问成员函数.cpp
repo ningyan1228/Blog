@@ -36,7 +36,7 @@ void test() {
  //  p->showClassName();
 }
 
-int main() {
+int main6() {
 
     test();
 
