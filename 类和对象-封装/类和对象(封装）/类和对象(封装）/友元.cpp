@@ -24,7 +24,7 @@ using namespace std;
 
 友元的三种实现
 
-* 全局函数做友元
+* 全局函数做友元  goodgay
 * 类做友元
 * 成员函数做友元
 
@@ -35,7 +35,7 @@ using namespace std;
 //房屋类
 class Building {
     //告诉编译器 goodGay全局函数 是 Building类的好朋友，
-    //可以访问类中的私有内容 
+    //可以访问房屋类中的私有内容 
     //两次分别对应 指针和引用传参
     friend void goodGay(Building * building); //指针
     friend void goodGay1(Building & building);//引用
@@ -48,25 +48,27 @@ public:
 
     }
 
-    string m_SittingRoom;//客厅
-private:
+    string m_SittingRoom;//客厅  公共属性
+
+private:  //私有属性 
     string m_BedRoom;
 
 };
 
-//全局函数
+//全局函数  1、指针传递参数
 void goodGay(Building *building)//形参传入一个building的对象进来
 //void goodGay(Building &building) 指针或者是引用都可以传进来
+//目的是访问房屋的公共属性和私有属性
 {
-    cout << "好基友全局函数 正在访问： " 
+    cout << "好基友全局函数 正在访问客厅： " 
          << building->m_SittingRoom << endl;
-    //  需用 -> 访问成员
+    // 指针 需用 -> 访问成员
 
-    cout << "好基友全局函数 正在访问： "
+    cout << "好基友全局函数 正在访问卧室： "
          << building->m_BedRoom<< endl;
 
 }
-
+//2、 引用传递参数
 void goodGay1(Building & building) {
 
     cout << "好基友全局函数 正在访问： "
@@ -74,7 +76,7 @@ void goodGay1(Building & building) {
 
     cout << "好基友全局函数 正在访问： "
         << building.m_BedRoom << endl;
-    //用 . 访问成员
+    //  引用 用 . 访问成员
 
 }
 
@@ -86,7 +88,7 @@ void goodGay1(Building & building) {
 */
 
 void test011() {
-    Building building;
+    Building building; //实例化对象
     goodGay(&building); //指针传递显式传递对象地址（使用&）
 
     goodGay1(building);// 引用直接传递对象
@@ -94,7 +96,7 @@ void test011() {
 
 
 
-int main() {
+int main7() {
 
     test011();
    
@@ -103,21 +105,22 @@ int main() {
 }
 
 /*
-对于54 55行的讲解
+对于59 72行的讲解
 
-在 C++ 中，**指针（Pointer）** 和 **引用（Reference）** 都可以用来间接操作对象，但它们的语法和特性有本质区别。以下是代码中第 54 行和第 55 行的具体差异：
+在 C++ 中，**指针（Pointer）** 和 **引用（Reference）** 都可以用来间接操作对象，
+但它们的语法和特性有本质区别。以下是代码中第 54 行和第 55 行的具体差异：
 
 ---
 
 ### **代码片段**
 ```cpp
-// 第 54 行（实际代码）
+// 第 59 行（实际代码）
 void goodGay(Building *building) {  // 指针传递
     cout << building->m_SittingRoom << endl;
     cout << building->m_BedRoom << endl;
 }
 
-// 第 55 行（注释中的代码）
+// 第 72 行（注释中的代码）
 void goodGay(Building &building) {  // 引用传递
     cout << building.m_SittingRoom << endl;
     cout << building.m_BedRoom << endl;
@@ -129,7 +132,7 @@ void goodGay(Building &building) {  // 引用传递
 ### **核心区别**
 | **特性**         | **指针传递 (`Building*`)**                     | **引用传递 (`Building&`)**                     |
 |------------------|-----------------------------------------------|-----------------------------------------------|
-| **语法**         | 使用 `->` 访问成员                             | 使用 `.` 访问成员                              |
+| **语法**         | 使用 `->` 访问成员 属性                            | 使用 `.` 访问成员                              |
 | **参数传递方式** | 需显式传递对象地址（`&building`）              | 直接传递对象（`building`）                     |
 | **空值风险**     | 可以传递 `nullptr`（需判空）                   | 必须绑定有效对象（不可为空）                    |
 | **内存操作**     | 可以修改指针指向其他对象                       | 始终绑定初始对象（不可修改）                    |
