@@ -131,9 +131,11 @@
     <ClCompile Include="const修饰成员函数.cpp" />
     <ClCompile Include="this指针.cpp" />
     <ClCompile Include="友元.cpp" />
+    <ClCompile Include="左移运算符重载.cpp" />
     <ClCompile Include="成员函数做友元.cpp" />
     <ClCompile Include="空指针访问成员函数.cpp" />
     <ClCompile Include="类做友元.cpp" />
+    <ClCompile Include="运算符重载.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
