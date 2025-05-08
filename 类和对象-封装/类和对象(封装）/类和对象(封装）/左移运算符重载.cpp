@@ -4,13 +4,20 @@ using namespace std;  // 使用标准命名空间（可以少写std::）
 
 /* ----------------------------------------
 作用：可以输出自定义数据类型
+这段代码演示了如何通过**重载左移运算符（<<）**让 cout 直接输出自定义的类对象。
 -------------------------------------------
+让 cout << Football对象 能够输出对象的成员变量（如 q_a 和 q_b），
+就像输出基本类型（如 int）一样。
 */
-//左移运算符重载  Football 类定义
+//左移运算符（<<)重载  Football 类定义
 class Football {
-    friend ostream& operator<<(ostream& cout, Football& p);
+    friend ostream & operator<<(ostream& cout, Football& p);
+    //operator<< 是全局函数，默认无法访问类的私有成员（q_a, q_b）。
+    // 通过友元声明，允许该函数访问私有数据。
+
+
 public:
-    Football(int a, int b) {
+    Football(int a, int b) {   // 构造函数
         q_a = a;
         q_b = b;
     }
@@ -20,11 +27,12 @@ private:
     ////利用成员函数重载 左移运算符
     //void operator<<(Football &p)
     //{
-    //不会利用成员函数重载<<运算符，因为无法实现
+    //不利用成员函数重载<<运算符，因为无法实现
     //cout在左侧
 
     //}
-    int q_a;
+    // 成员属性
+    int q_a;  
     int q_b;
 
 };
@@ -37,6 +45,9 @@ private:
 //只能利用全局函数重载左移运算符
 ostream & operator<<(ostream &cout,Football & p)
 //本质operator<<(cout,p) 等于cout<<p 返回值类型是ostream
+
+//cout的本质 是ostream类的对象 也就是：ostream cout  |cout实质上是ostream生成的对象
+
 /*
 作用：教 cout 如何输出 Football 对象
 分解理解：

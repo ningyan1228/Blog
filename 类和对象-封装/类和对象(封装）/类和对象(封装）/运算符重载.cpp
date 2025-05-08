@@ -16,7 +16,7 @@ using namespace std;
 // 加号运算符重载 定义一个类 人
 class Person {
 public:
-    //1、成员函数重载 +号
+    //    1、成员函数重载 +号
     /* 基本语法：
     返回类型 operator运算符(参数列表) {
     // 实现逻辑
@@ -54,7 +54,6 @@ public:
     //    return temp; // 返回合并后的新对象
     // 类比：把记录结果的白纸（temp）交给使用者
     //}
-
 
 
    //成员属性 （变量）
@@ -104,7 +103,7 @@ void testms()
     //全局函数重载本质调用： Person p3=operator+(p1,p2);
 
     //运算符重载，也可以发生函数重载
-    Person p4 = p3 + 10;  //Person + int
+    Person p4 = p3 + 10;  //  Person + int
 
 
     cout << "p3.m_A= " << p3.m_A << endl;
